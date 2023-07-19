@@ -1,0 +1,11 @@
+.cardProduct {
+    padding: 20px;
+    width: 80%;
+    background-color: none !important;
+}
+.imgCard {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 90% !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}

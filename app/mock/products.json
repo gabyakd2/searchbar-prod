@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "HEADSET GAMER HAVIT HV-H2232 D",
+      "code": "CODE143706",
+      "price": "3000",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_660325-MLA45810336750_052021-O.webp"
+    },
+    {
+      "id": 2,
+      "title": "HEADSET GAMER NOGA STORMER",
+      "code": "CODE185756",
+      "price": "2550",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_935645-MLA31024702074_062019-O.webp"
+    },
+    {
+      "id": 3,
+      "title": "HEADSET GAMER CONSTRICTOR",
+      "code": "CODE143456",
+      "price": "2700",
+      "image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/017/593/products/awh0000141-ce8f1d6e4b665ff0ff16644757454571-640-0.webp"
+    },
+    {
+      "id": 4,
+      "title": "MOUSE GAMER STORMER",
+      "code": "CODE895432",
+      "price": "1500",
+      "image": "http://www.noganet.com/Image/0/600_750-ST-X1.jpg"
+    }
+  ]
+}
