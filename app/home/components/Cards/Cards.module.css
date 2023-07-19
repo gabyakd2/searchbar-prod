@@ -1,0 +1,14 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center !important;
+}
+.cardsList {
+  display: flex;
+  justify-content: center;
+}
+.spinnerPosition {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
