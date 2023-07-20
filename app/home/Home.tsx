@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react';
 import Cards from "../home/components/Cards/Cards"
 import { products } from "../mock/products.json"
@@ -16,7 +18,10 @@ function Home() {
         setProductList={setProductList}
         setIsLoading={setIsLoading}
       />
-      <Cards  />
+      <Cards 
+        isLoading={isLoading} 
+        productList={productList}
+      />
       <Container>
         <hr className="border-top mt-5 w-100" />
         <p>{!isLoading && productList?.length} resultados</p>
