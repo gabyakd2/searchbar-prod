@@ -18,7 +18,7 @@ function SearchBar({
 }: ProductListProps) {
   const [input, setInput] = useState<string>("");
   const auxProduct: Product[] = productList;
-
+console.log(auxProduct,'SOY AUXILIAR')
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     event.preventDefault();
     setInput(event.target.value);
@@ -56,7 +56,7 @@ function SearchBar({
             placeholder="Buscar un articulo..."
             onChange={(e: ChangeEvent<HTMLInputElement>) => handleInputChange(e)}
           />
-          <Button variant="dark" size="lg" type="submit" className="pb-3">
+          <Button variant="dark" size="lg" type="submit" className="py-3 d-flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -70,13 +70,14 @@ function SearchBar({
         </InputGroup>
       </Form>
       {input.length ? (
-        <Button variant="dark" className="mt-2" onClick={handleCloseInput}>
+        <Button variant="dark" className="mt-2 d-flex" onClick={handleCloseInput}>
           {input}{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="13"
             fill="currentColor"
             viewBox="0 0 16 16"
+            className="ms-2 mt-1"
           >
             <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
           </svg>
