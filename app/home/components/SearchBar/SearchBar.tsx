@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
-import { ProductList } from "../../model";
+import { products } from "../../../mock/products.json"
 import InputGroup from "react-bootstrap/InputGroup";
 import swal from "sweetalert";
 import { Product } from "../../model";
@@ -11,14 +11,10 @@ interface ProductListProps {
   setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-function SearchBar({
-  productList,
-  setProductList,
-  setIsLoading,
-}: ProductListProps) {
+function SearchBar({ productList, setProductList, setIsLoading }: ProductListProps) {
   const [input, setInput] = useState<string>("");
-  const auxProduct: Product[] = productList;
-console.log(auxProduct,'SOY AUXILIAR')
+  const auxProduct: Product[] = products;
+// console.log(productList,'SOY AUXILIAR')
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     event.preventDefault();
     setInput(event.target.value);
@@ -43,6 +39,7 @@ console.log(auxProduct,'SOY AUXILIAR')
       } else {
         setProductList(filteredProducts);
       }
+      setIsLoading(false);
     }, 3000);
   };
 

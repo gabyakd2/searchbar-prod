@@ -1,10 +1,10 @@
-'use client'
+"use client";
 
-import React, { useState } from 'react';
-import Cards from "../home/components/Cards/Cards"
-import { products } from "../mock/products.json"
+import React, { useState } from "react";
+import Cards from "../home/components/Cards/Cards";
+import { products } from "../mock/products.json";
 import SearchBar from "../home/components/SearchBar/SearchBar";
-import { Product, ProductList } from "./model"
+import { Product, ProductList } from "./model";
 import { Container } from "react-bootstrap";
 
 function Home() {
@@ -13,21 +13,18 @@ function Home() {
 
   return (
     <div>
-      <SearchBar 
+      <SearchBar
         productList={productList}
         setProductList={setProductList}
         setIsLoading={setIsLoading}
       />
-      <Cards 
-        isLoading={isLoading} 
-        productList={productList}
-      />
+      <Cards isLoading={isLoading} productList={productList} />
       <Container>
         <hr className="border-top mt-5 w-100" />
         <p>{!isLoading && productList?.length} resultados</p>
       </Container>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
